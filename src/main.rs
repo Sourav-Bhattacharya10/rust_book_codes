@@ -1,4 +1,6 @@
-mod chapter6;
+// mod chapter6;
+// mod chapter8;
+mod chapter9;
 
 // use chapter6::part_6_2::{Coin, UsState, value_in_cents};
 // use chapter6::part_6_2::plus_one;
@@ -13,7 +15,13 @@ mod chapter6;
 //     println!("Re-roll {other}");
 // }
 
-use chapter6::part_6_2::{Coin, UsState, describe_state_quarter};
+// use chapter6::part_6_2::{Coin, UsState, describe_state_quarter};
+
+// use chapter8::part_8_3::create_hasp_map;
+
+// use chapter9::part_9_1::unrecovearble_errors;
+
+use chapter9::part_9_2::recoverable_errors;
 
 fn main() {
     // chapter6 -> part_6_2
@@ -46,9 +54,14 @@ fn main() {
     //     println!("The maximum is not configured");
     // }
 
-    let coin = Coin::Quarter(UsState::Alabama);
-    println!("let else example: {:?}", describe_state_quarter(coin));
+    // let coin = Coin::Quarter(UsState::Alabama);
+    // println!("let else example: {:?}", describe_state_quarter(coin));
 
-    let coin2 = Coin::Nickel;
-    println!("let else example2: {:?}", describe_state_quarter(coin2));
+    // let coin2 = Coin::Nickel;
+    // println!("let else example2: {:?}", describe_state_quarter(coin2));
+
+    // create_hasp_map();
+
+    // unrecovearble_errors();
+    println!("{}", recoverable_errors().unwrap());
 }
